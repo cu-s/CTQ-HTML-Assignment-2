@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      var unis =['서울대학교', '연세대학교', '고려대학교'];
+    </script>
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1><a href="main.html">상위권 대학별 컴퓨터 관련 학과</a></h1>
+    <div id='grid'>
+      <ol>
+        <script>
+        var i = 0;
+        while(i < unis.length){
+          document.write('<li><a href="'+unis[i]+'.html">'+unis[i]+'</a></li>');
+          i = i + 1;
+        }
+        </script>
+        <input id="night_day" type="button" value="다크모드" onclick="nightDayHandler(this);">
+      </ol>
+      <div id='article'>
+        <h2>서울대학교 : 전기정보 공학부 / 컴퓨터 공학부</h2>
+        <p>
+          수능 <br>
+          <img src = "서울대정시.png" width="50%"><br>
+          <img src = "서울대정시컷.png" width="50%"><br>
+          학종 지균 <br>
+          <img src = "서울대지균.png" width="50%"><br>
+          <img src = "서울대지균컷.png" width="50%"><br>
+          학종 일반 <br>
+          <img src = "서울대일반.png" width="50%"><br>
+          <img src = "서울대일반컷.png" width="50%"><br>
+          <용어설명><br>
+          1) 충원인원 : 각 모집단위별 최종등록자 기준 예비합격순위 <br>
+          2) 환산점수 : 각 모집단위별 학생선바에 활용된 환산점수 <br>
+          3) 최고점(수능) : 각 모집단위별 학생선발에 활용된 환산점수의 수능전형 환산총점(만점) <br>
+          4) 70% 컷 : 최종등록자 중 상위 70%에 해당하는 점수 <br>
+          5) 영역별 백분위 70% 컷 (국어, 수학 탐구) : <br>
+          최종등록자의 각 과목별 백분위 70% <br>
+          6) 백분위 70% 컷 평 : 최종등록자 중 상위 70%에 해당하는 합격자의 백분위 평균 <br>
+        </p>
+      <div>
+    <div>
+  </body>
+</html>

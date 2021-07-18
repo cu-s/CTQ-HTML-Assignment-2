@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="colors.js"></script>
+    <script>
+        var unis =['서울대학교', '연세대학교', '고려대학교'];
+    </script>
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1><a href="main.html">상위권 대학별 컴퓨터 관련 학과</a></h1>
+    <div id='grid'>
+      <ol>
+        <script>
+        var i = 0;
+        while(i < unis.length){
+          document.write('<li><a href="'+unis[i]+'.html">'+unis[i]+'</a></li>');
+          i = i + 1;
+        }
+        </script>
+        <input id="night_day" type="button" value="다크모드" onclick="nightDayHandler(this);">
+      </ol>
+      <div id='article'>
+        <h2>상위권 대학별 컴퓨터 관련 학과 정리</h2>
+        <p>
+          누구나 가고싶어하는 서울대학교, 연세대학교, 고려대학교 총 3개의 대학의 컴퓨터 관련 학과 정리와
+          간단하게 전년도 기준 필요 수능점수, 필요 내신을 알아보겠습니다.<br>
+          정시파이터같은 소리하지 말고 오늘 하루에 충실할 수 있도록 노력하고 여러분 모두 공부 열심히해서 원하는 대학 들어갑시다!!
+        </p>
+      <div>
+    <div>
+  </body>
+</html>
